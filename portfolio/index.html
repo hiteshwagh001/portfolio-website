@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="shortcut icon" href="hitesh.png" type="image/x-icon">
+</head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@400;500;600&display=swap');
+
+  :root {
+      --header-height: 3rem;
+  
+      --hue-color: 250;
+  
+      --first-color: hsl(var(--hue-color), 69%, 61%);
+      --first-color-second: hsl(var(--hue-color), 69%, 61%);
+      --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+      --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+      --title-color: hsl(var(--hue-color), 8%, 15%);
+      --text-color: hsl(var(--hue-color), 8%, 45%);
+      --text-color-light: hsl(var(--hue-color), 8%, 65%);
+      --input-color: hsl(var(--hue-color), 70%, 96%);
+      --body-color: hsl(var(--hue-color), 60%, 99%);
+      --container-color: #FFF;
+  
+      --body-font: 'Poppins', sans-serif;
+  
+      --big-font-size: 2rem;
+      --h1-font-size: 1.5rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 1.125rem;
+      --normal-font-size: .813rem;
+      --smaller-font-size: .75rem;
+  
+      --font-medium: 500;
+      --font-semi-bold: 600;
+  
+      --mb-0-25: .25rem;
+      --mb-0-5: .5rem;
+      --mb-0-75: .75rem;
+      --mb-0-1: .1rem;
+      --mb-0-2: .2rem;
+      --mb-0-3: .3rem;
+  
+      --z-tooltip: 10;
+      --z-fixed: 100;
+      --z-model: 1000;
+  
+  
+  }
+  
+  @media screen and (min-width :968px) {
+      :root {
+          --big-font-size: .3rem;
+          --h1-font-size: 2.25rem;
+          --h2-font-size: 1.5rem;
+          --h3-font-size: 1.25rem;
+          --normal-font-size: 1rem;
+          --small-font-size: 0.875rem;
+          --smaller-font-size: .75rem;
+      }
+  
+      .coloumn {
+          width: 100%;
+          margin-top: 0%;
+      }
+  
+  }
+  
+  * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+  }
+  
+  html {
+      scroll-behavior: smooth;
+  }
+  
+  body {
+      font-family: var(--body-font);
+      font-size: var(--normal-font-size);
+      background-color: var(--body-color);
+      color: var(--text-color);
+  
+  }
+  
+  h1, h2, h3, h4 {
+      color: var(--title-color);
+      font-weight: var(--font-semi-bold);
+  }
+  
+  ul {
+      list-style: none;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .section {
+      padding: 2rem 0 4rem;
+  }
+  
+  .section_title {
+      font-size: var(--h1-font-size);
+  }
+  
+  .section_subtitle {
+      display: block;
+      font-size: var(--small-font-size);
+      margin-bottom: var(--mb-3);
+  }
+  
+  .section_subtitle, .section_title {
+      text-align: center;
+  }
+  
+  .body1 {
+      background-image: linear-gradient(315deg, #8da8ec 27%, #000000 103%);
+      height: 100vh;
+  }
+  
+  .body2 {
+      align-items: center;
+      color: whitesmoke;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      vertical-align: middle;
+      position: relative;
+      top: 30%;
+  }
+  
+  .body1 div button {
+      background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)
+  }
+  
+  .body1 h1, h4 {
+      color: #022638;
+      text-shadow: 0 0 15px whitesmoke;
+      padding: 1rem;
+      transition: 0.5s;
+      letter-spacing: 1px;
+  }
+  
+  .body1 div h1:hover, h4:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0 15px rgb(255, 213, 0);
+      letter-spacing: 5px;
+      transition: 0.8s;
+  
+  }
+  
+  .body1 div button {
+      color: #7cb6d2;
+      margin: auto;
+      margin-top: 2rem;
+      padding: 0.7rem 3rem;
+      border: none;
+      width: max-content;
+      letter-spacing: 2px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      /* color: white; */
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+      font-weight: 600;
+  }
+  
+  .body1 div button:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: 0.4s
+  }
+  
+  .container {
+      max-width: 76.8rem;
+      /* margin-left 2rem; */
+      position: sticky;
+      padding-left: 2rem;
+      height: 4rem;
+      background-color: rgb(224, 224, 224);
+  }
+  
+  .grid {
+      display: flex;
+  }
+  
+  li {
+      padding: 1rem;
+  }
+  
+  i {
+      color: darkslateblue;
+      padding: 5px;
+  }
+  
+  .header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: var(--z-fixed);
+      background-color: var(--body-color);
+  }
+  
+  .nav_menu {
+      position: fixed;
+      left: 40%;
+      width: 100%;
+      /* padding: 0.8rem 1.5rem 4rem 0rem; */
+  }
+  
+  .nav {
+      max-width: 100%;
+      /* height: var(--header-height); */
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+  }
+  
+  .nav_logo {
+      font-size: var(--h1-font-size);
+  }
+  
+  
+  
+  .nav_logo,
+  .nav_toggle {
+      color: var(--title-color);
+      font-weight: var(--font-medium);
+      /* transform: translateY(14.8rem); */
+  }
+  
+  .nav_logo:hover {
+      color: var(--first-color);
+  }
+  
+  .nav_toggle {
+  
+      visibility: hidden;
+  }
+  
+  .nav_toggle:hover {
+      color: var(--first-color);
+  }
+  
+  .close {
+      visibility: hidden;
+  }
+  
+  .nav_link {
+      align-items: center;
+      font-size: var(--small-font-size);
+      color: var(--title-color);
+      font-weight: var(--font-medium);
+  }
+  
+  .nav_link:hover {
+      color: var(--first-color);
+  }
+  
+  .nav_icon {
+      font-size: 1.2rem;
+      color: rgb(49, 49, 49);
+  }
+  
+  @media (max-width: 767px) {
+      .nav_menu {
+          position: fixed;
+          bottom: -100%;
+          left: 0%;
+          width: 100%;
+          background-color: var(--body-color);
+          padding: 2rem 1.5rem 4rem;
+          box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+          border-radius: 1.5rem 1.5rem 0 0;
+          transition: 0.3s;
+  
+      }
+  
+      .nav_list {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+      }
+  
+      .nav_close {
+          visibility: visible;
+      }
+  
+      .nav_toggle {
+          font-size: 1.1rem;
+          cursor: pointer;
+          visibility: visible;
+      }
+  
+      .nav_link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: var(--small-font-size);
+          color: rgb(49, 49, 49);
+          font-weight: var(--font-medium);
+      }
+  
+      .nav_link:hover {
+          color: var(--first-color);
+      }
+  
+      .grid {
+          display: grid;
+          gap: 1.5rem;
+      }
+  
+  
+  
+      .close {
+          position: absolute;
+          right: 1.3rem;
+          bottom: .5rem;
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: var(--first-color);
+      }
+  
+      .show-menu {
+          bottom: 0;
+      }
+  
+  
+  }
+  
+  .block {
+      height: 100%;
+      margin-top: 4rem;
+      background-image: linear-gradient(315deg, #8da8ec 27%, #000000 103%);
+  }
+  
+  .home {
+      /* height: 100vh; */
+      margin-top: 4rem;
+  }
+  
+  .intro {
+      display: grid;
+      /* display: flex; */
+      /* height: 100vh; */
+      /* background-image: url(/hitesh.png); */
+      /* background-repeat: no-repeat; */
+      grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .name {
+      margin: auto;
+      font-size: x-large;
+      /* margin-left: 11rem; */
+      justify-content: center;
+  
+  }
+  
+  span {
+      color: rgb(255, 0, 106);
+  }
+  
+  .photo {
+      /* height: 46.5rem; */
+      width: fit-content;
+      /* position: absolute; */
+      /* bottom: 25rem; */
+      /* width:  46.5rem; */
+  }
+  
+  .cots {
+      color: whitesmoke;
+  }
+  
+  .homebtns {
+      display: grid;
+      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
+  }
+  
+  .btn {
+      background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)
+  }
+  
+  a {
+      color: #8da8ec;
+      /* font-size: 0.5rem; */
+      font-weight: bolder;
+  }
+  
+  .btn {
+      margin: auto;
+      font-size: small;
+      margin-top: 1rem;
+      padding: 0.7rem 3rem;
+      border: none;
+      width: 12rem;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      /* color: white; */
+      box-shadow: 0 0 7px #eee;
+      border-radius: 10px;
+      display: block;
+  }
+  
+  .btn:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.4s
+  }
+  
+  a:hover {
+      color: #6783ca;
+  }
+  
+  .aboutblock {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(47rem, auto));
+      /* height: 50vh; */
+      justify-content: space-around;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .bc1 {
+      justify-content: center;
+      margin: 1rem 1rem;
+  }
+  
+  .aboutimg {
+      height: 15rem;
+      align-items: center;
+      justify-items: center;
+      /* left: 10rem; */
+      border-radius: 20px;
+      box-shadow: 0 0 30px black;
+      margin: auto;
+      align-items: center;
+  }
+  
+  .abtimg {
+      /* justify-content: center; */
+      /* align-items: center; */
+      margin: auto;
+      /* margin-top: 10rem; */
+      /* margin-right: 10rem; */
+      /* width: calc(50% - -8rem); */
+  
+  }
+  
+  .name1 {
+      /* margin: 11rem 0rem 2rem 11rem; */
+      margin: 0 10rem;
+      /* text-align: center; */
+      padding: 0 0 0.5rem 0;
+      color: black;
+      text-shadow: 0 0 10px rgb(127, 177, 123);
+  }
+  
+  .abt {
+      width: calc(50% - -16rem);
+      /* -align: center; */
+      align-items: center;
+      margin: auto;
+      /* margin-top: 10rem; */
+      margin-left: 10rem;
+      text-shadow: 0 0 1rem rgb(110, 110, 110);
+      color: #000000;
+  }
+  
+  #About {
+      background: none;
+  }
+  
+  .base {
+      text-align: center;
+      /* margin: 10rem 0 -4rem 0; */
+      font-size: xx-large;
+      transition: 0.4s;
+      /* padding: 10rem 0rem 4rem 0rem; */
+      /* height: 20vh; */
+      /* transform: translateY(6rem); */
+  }
+  
+  .A {
+      font-size: 3rem;
+  }
+  
+  .base:hover {
+      transition: 0.4s;
+      cursor: pointer;
+  }
+  
+  #span {
+      margin-bottom: 0;
+      height: 10vh;
+  }
+  
+  /* .skills {
+      height: 80vh;
+      width: 100%;
+  } */
+  
+  .coloumn {
+      /* width: calc(50% - 30px); */
+      /* text-align: center; */
+      margin-top: 2rem;
+      font-weight: 700;
+      color: #000000;
+      /* width: 80vh; */
+      /* height: 100vh; */
+  }
+  
+  .bar {
+      color: #000000;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+  
+  }
+  
+  
+  
+  .skilcontnet {
+      /* margin-top: 1rem; */
+      text-shadow: 0 0 40px rgb(0, 0, 0);
+      text-align: justify;
+  
+  }
+  
+  .text {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+  
+  }
+  
+  .info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      justify-content: space-between;
+  }
+  
+  
+  
+  .skill-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(42rem, auto));
+      justify-content: center;
+      margin: -2rem 3rem;
+      position: relative;
+      overflow: hidden;
+  
+  }
+  
+  .left {
+      padding: 4rem;
+      width: 100%;
+  
+  }
+  
+  .right {
+      padding: 4rem;
+      width: 100%;
+  
+  }
+  
+  .line {
+      height: .4rem;
+      width: 100%;
+      background: lightgray;
+      position: relative;
+      border-radius: 5rem;
+  }
+  
+  .line::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 80%;
+      left: 0;
+      top: 0;
+      background: crimson;
+      border-radius: 3rem;
+  }
+  
+  .skill-content .right .html::before {
+      width: 90%;
+  }
+  
+  .skill-content .right .css::before {
+      width: 80%;
+  }
+  
+  .skill-content .right .js::before {
+      width: 50%;
+  }
+  
+  .skill-content .right .ndjs::before {
+      width: 30%;
+  }
+  
+  .skill-content .right .tw::before {
+      width: 80%;
+  
+  }
+  
+  
+  
+  
+  
+  .services {
+      /* height: 100vh; */
+      /* float: inline-end; */
+      margin: auto;
+      overflow: hidden;
+  }
+  
+  .card {
+  
+      text-align: center;
+      width: calc(50% - 30px);
+      margin: auto;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+      height: auto;
+      margin-bottom: 1rem;
+      /* width: 30rem; */
+      border-radius: 2rem;
+      background-color: rgb(255, 206, 145);
+  }
+  
+  .card h2 {
+      padding: 0.5rem;
+  }
+  
+  .card1 {
+      padding: 1.5rem 2rem;
+      color: black;
+  }
+  
+  .contactlogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+  }
+  
+  .whole {
+      color: #4b629b;
+  }
+  
+  .contactlogo a img {
+      height: 2.5rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      border-radius: 10rem;
+      transition: 0.3s;
+  }
+  
+  .contactlogo a img:hover {
+      background-color: #ff702a;
+      box-shadow: 0px 0px 15px greenyellow;
+      transition: 0.3s;
+  }
+  
+  .bottom {
+      color: rgb(0, 0, 0);
+      font-style: italic;
+      font-size: small;
+      text-align: center;
+      justify-content: space-around;
+  }
+  
+  .service_title, .contact-title {
+      text-align: center;
+      color: #16222A;
+      padding: 2rem;
+      font-size: 2rem;
+  }
+  
+  .contactme {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, auto));
+      /* height: 50vh; */
+      justify-content: space-around;
+      position: relative;
+      overflow: hidden;
+  
+  }
+  
+  .field {
+      /* display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, auto));
+      align-items: center; */
+      justify-content: center;
+  }
+  
+  .text3 {
+      text-align: center;
+      color: black;
+      font-weight: 600;
+      font-size: 1.5rem;
+  }
+  
+  .xyz {
+      margin: 0.5rem 1rem;
+  }
+  input:focus {
+      border-color: red;
+      box-shadow: 0 0 1rem rgb(0, 0, 0);
+  }
+  
+  input, textarea {
+      border: 1px solid gray;
+      padding: 0.5rem;
+      color: gray;
+      font-weight: 600;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      border-radius: 0.5rem;
+  }
+  
+  textarea {
+      padding: 0.5rem;
+      color: gray;
+      font-weight: 600;
+      max-height:5rem;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .submit button {
+      background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)
+  }
+  
+  .submit button {
+      margin: auto;
+      padding: 0.7rem 3rem;
+      border: none;
+      width: 12rem;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      /* color: white; */
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+  }
+  embed
+  {
+      border: none;
+      width: 5%;
+      height: 2%;
+      padding: 1rem;
+      margin-left: 1rem;
+  
+  }
+  .codes
+  {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      
+  }
+  .codes p a{
+      color: #000000;
+      padding: 1rem;
+  }
+  .submit button:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.4s
+  }
+  
+  .blank {
+      height: 20vh;
+  
+  }
+  
+  @keyframes example {
+      0% {
+          text-shadow: 12px 10px 25px rgb(255, 81, 0);
+      }
+  
+      25% {
+          text-shadow: 10px 12px 25px rgb(94, 255, 0);
+      }
+  
+      50% {
+          text-shadow: 12px 10px 25px rgb(0, 255, 213);
+      }
+  
+      75% {
+          text-shadow: 10px 12px 25px rgb(119, 0, 255);
+      }
+  
+      100% {
+          text-shadow: 12px 10px 20px rgb(255, 0, 98);
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .coloumn {
+          width: 100%;
+          margin-top: 0;
+          height: min-content;
+          padding: 3rem 10rem;
+      }
+  
+      .body1 div {
+          margin: auto;
+          transform: translateY(30%);
+      }
+  
+      .whole {
+          color: #8da8ec;
+      }
+  
+      section {
+          margin-bottom: 11vh;
+      }
+  
+      .card {
+          width: fit-content;
+          margin: 1rem;
+      }
+  
+      .name {
+          order: 1;
+      }
+  
+      .left {
+          padding: 0 10rem;
+      }
+  
+      .abt {
+          margin: auto;
+          text-align: center;
+          padding: 0 10rem;
+          /* justify-content: space-around; */
+          text-align: justify;
+      }
+  
+      .skill-content {
+          margin: 0;
+      }
+  
+      .abtimg {
+          margin: auto;
+          justify-content: center;
+          display: none;
+      }
+  
+      .nav_logo {
+          font-size: 2.5rem;
+      }
+  
+      input, textarea {
+          width: 25rem;
+          margin: 0 3rem;
+  
+      }
+  
+      .nav_menu {
+          position: fixed;
+          left: 0%;
+          width: 100%;
+          /* padding: 0.8rem 1.5rem 4rem 0rem; */
+      }
+  
+      .submit button {
+          margin: auto;
+      }
+  
+  }
+  
+  @media (max-width: 910px) {
+      li {
+          padding: 1rem .5rem;
+      }
+  
+      .abt {
+          margin: auto;
+          width: fit-content;
+      }
+  
+      .abtimg {
+          display: none;
+      }
+  
+      .nav_logo {
+          font-size: 2.5rem;
+      }
+  }
+  
+  @media (max-width: 420px) {
+      .abt {
+          width: 44%;
+          padding: 2rem;
+      }
+  
+      .contactlogo {
+          display: grid;
+          margin: 0 10rem;
+          justify-content: left;
+          grid-template-columns: repeat(auto-fit, minmax(5rem, auto));
+      }
+  
+      .abtimg {
+          width: 44%;
+      }
+  
+      .whole {
+          padding: 0 5rem;
+  
+      }
+  
+      .nav_toggle {
+          margin: 0.5rem 0;
+  
+      }
+  
+      .text {
+          margin: 1rem 3rem;
+  
+  
+      }
+  
+      .bars {
+          margin: 0 2rem;
+      }
+  
+      .skilcontnet {
+          margin: 0 3rem;
+      }
+  
+      .homebtns {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .name1 {
+          padding: 0 5rem;
+  
+      }
+  
+      .nav_logo {
+          font-size: 2rem;
+      }
+  
+      .nav {
+          padding: 1px;
+      }
+  
+      input, textarea {
+          width: 15rem;
+          margin: 0 8rem;
+          justify-content: center;
+          /* position: absolute; */
+  
+  
+      }
+  }
+  
+  @media (max-width :310px) {
+      .bars {
+          margin: 0 4rem;
+      }
+  }</style>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav_logo">Port<span>Folio</span></a>
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">
+              <i class="uil uil-estate nav_icon"></i>Home
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#About" class="nav_link">
+              <i class="uil uil-user nav_icon"></i>About
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav_link">
+              <i class="uil uil-file nav_icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#services" class="nav_link">
+              <i class="uil uil-suitcase nav_icon"></i>Services
+            </a>
+          </li>
+          <!-- <li class="nav_item">
+            <a href="#portfolio" class="nav_link">
+              <i class="uil uil-scenery nav_icon"></i>PortFolio
+            </a>
+          </li> -->
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">
+              <i class="uil uil-message nav_icon"></i>Contact Me
+            </a>
+          </li>
+        </ul>
+        <div class="close">
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
+      </div>
+
+      <div class="nav_btns">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="uil uil-apps nav_icon"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="block">
+    <section class="home" id="home">
+      <div class="intro">
+        <h1 class="name">
+          <div class="whole">Hi, I'm<span> Hitesh Wagh </span> <span class="cots"> , </span></div>
+          <div class="whole"><span class="cots"> ""</span> I'm a web developer.
+            <span class="cots">""</span>
+          </div>
+          <div class="homebtns">
+            <button class="btn">
+              <a href="#contact">Contact Me</a>
+            </button>
+            <button class="btn">
+              <a href="#About">About </a>
+            </button>
+          </div>
+        </h1>
+
+        <div class="personalpic"><img class="photo" src="/hitesh.png" /></div>
+      </div>
+    </section>
+
+
+    <section class="About" id="About">
+      <h1 class="base"><span class="A"> A</span>bout Me</h1>
+      <div class="aboutblock">
+        <div class="bc1">
+          <div class="bc">
+            <h1 class="name1">
+              Hi, I'm<span> Hitesh Wagh </span> <span class="cots"> , </span><br />
+              <span class="cots"> ""</span> I'm a web developer.
+              <span class="cots">""</span>
+            </h1>
+            <h3 class="abt">
+              I am Front-end web developer. I can provide clean code and pixel
+              perfect design. I also make the website more & more intetactive
+              with web animations. A responsie design makes your website
+              accessible to all users, regardless of their devices. I am trying
+              to learn new things in the web-development.
+              <a href="#" onclick="alert('this is on working')" class="btn">Download CV</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="abtimg">
+          <img class="aboutimg" src="/aboutimg.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+    <section class="skills" id="skills">
+      <h1 class="base" id="span"><span class="A"> S</span>kills</h1>
+      <div class="skill-content">
+        <div class="coloumn left">
+          <div class="text">My creative Skills & Experiences</div><br />
+          <p class="skilcontnet">
+            I am Front-end web developer. I also make the website more & more
+            intetactive with web animations. A responsie design makes your
+            website accessible to all users, regardless of their devices. I am
+            trying to learn new things in the web-development and languages
+            also. I can code in the C++, Python, Java, Java-script,
+            Tailwind-CSS, Node.js, HTML, CSS. Recently I completed my
+            Internship in the Oasis Infobyte and completed my web-development
+            projects
+          </p>
+        </div>
+        <div class="coloumn right">
+          <div class="bars">
+            <div class="info">
+              <span class="bar">HTML</span>
+              <span class="bar">90%</span>
+            </div>
+            <div class="line html"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span class="bar">CSS</span>
+              <span class="bar">80%</span>
+            </div>
+            <div class="line css"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span class="bar">Java-script</span>
+              <span class="bar">50%</span>
+            </div>
+            <div class="line js"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span class="bar">Node.js</span>
+              <span class="bar">30%</span>
+            </div>
+            <div class="line ndjs"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span class="bar">Tailwind-CSS</span>
+              <span class="bar">80%</span>
+            </div>
+            <div class="line tw"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section class="services" id="services">
+      <h2 class="service_title"><span>S</span>ervices</h2>
+      <div class="card">
+        <h2> WEB DESIGNER </h2>
+        <div class="card1">
+          <p> I am Front-end web developer. I can provide clean code and pixel perfect design. I also make the website
+            more & more intetactive with web animations. A responsie design makes your website accessible to all users,
+            regardless of their devices.</p>
+        </div>
+      </div>
+      <div class="codes">
+        <!-- <button><embed src="Final_PPT_Script.pdf"></button> -->
+        <!-- <p><a href="/code1.pdf">code1</a></p>
+          <p><a href="/code2.pdf">code2</a></p>
+          <p><a href="/code3.pdf">code3</a></p>
+          <p><a href="/code4.pdf">code4</a></p>
+          <p><a href="/code5.pdf">code5</a></p>
+          <p><a href="/code6.pdf">code6</a></p> -->
+        <embed src="/code1.pdf">
+        <embed src="/code2.pdf">
+        <embed src="/code3.pdf">
+        <embed src="/code4.pdf">
+        <embed src="/code5.pdf">
+        <embed src="/code6.pdf">
+        <embed src="/cursor.txt" type="">
+      </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+      <h2 class="contact-title"><span>C</span>ontact Us</h2>
+      <div class="contactme">
+
+
+        <div class="form">
+          <div class="text3">Message Me </div>
+          <form action="https://formsubmit.co/hiteshswagh001@email.com" method="POST">
+            <div class="field">
+              <div class="xyz naam">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+              </div>
+              <div class="xyz email">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+              </div>
+              <input type="hidden" name="_next" value="https://burgofast1.000webhostapp.com/pages/thankyou.html">
+            </div>
+            <div class="xyz subject">
+              <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="xyz textarea">
+              <textarea name="message" id="message" placeholder="Message ..." cols="30" rows="10" required></textarea>
+            </div>
+            <div class="xyz submit">
+              <button type="submit" target="_blank">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contactlogo">
+          <a href="https://www.instagram.com/mr_hitesh_wagh/" target="_blank"><img src="/instalogo.png" /></a>
+          <a href="https://www.facebook.com/HiteshWagh001" target="_blank"><img src="/metalogo.png" /></a>
+          <a href="https://www.linkedin.com/in/hitesh-wagh-b7429422b/" target="_blank"><img
+              src="/linkedinlogo.png" /></a>
+          <a href="https://twitter.com/?lang=en-in" target="_blank"><img src="/twitterlogo.png" /></a>
+          <a href="https://wa.me/917796013430" target="_blank"><img src="/whatsapplogo.png" />
+            <a href="mailto:hiteshswagh001@gmail.com" target="_blank"><img src="/maillogo.png" /></a>
+        </div>
+
+      </div>
+      <div class="bottom">
+        By continuing past this page, you agree to our Terms of Service,
+        Cookie Policy, Privacy Policy and Content Policies. All rights reserved.
+      </div>
+      <div class="blank"></div>
+    </section>
+  </section>
+  <script src="portfolio.js"></script>
+</body>
+
+</html>

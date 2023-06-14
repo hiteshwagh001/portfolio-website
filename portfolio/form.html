@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <div class="text3">Message Me </div>
+        <form action="form.php" method="post">
+            <div class="field">
+                <div class="xyz naam">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                </div>
+                <div class="xyz email">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <input type="hidden" name="_next" value="https://burgofast1.000webhostapp.com/pages/thankyou.html">
+            </div>
+            <div class="xyz subject">
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="xyz textarea">
+                <textarea name="message" id="message" placeholder="Message ..." cols="30" rows="10" required></textarea>
+            </div>
+            <div class="xyz submit">
+                <input type="submit" name="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
